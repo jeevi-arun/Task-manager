@@ -10,7 +10,7 @@ const navigate =useNavigate()
     const [eUserName,setEUserName]=useState([])
     const [ePassword,setEPassword]=useState([])
     const [regUser, setRegUser]=useState(true)
-     const data =useLocation()
+     
   
 
 
@@ -44,7 +44,7 @@ const navigate =useNavigate()
     return(
       <div className='bg-black '>
         <div className='bg-white  '> 
-            <h1 className='font-bold text-3xl'>Hey {data.state.username}</h1>
+            <h1 className='font-bold text-3xl'>Hey there</h1>
             {regUser?<p>I help you manage your activities after you login :)</p> : <p className='text-red-500 text-xl'>Please sign up before you login</p>}
             
             <div className=' flex flex-col w-52'>
