@@ -49,7 +49,7 @@ const navigate =useNavigate()
             
             <div className=' flex flex-col w-52'>
             <input type='text' placeholder='Username' className='mt-3 border border-black rounded p-1' onChange={handleEUsername}></input>
-            <input type='text' placeholder='Password' className='mt-3 border border-black rounded p-1' onChange={handleEPassword}></input>
+            <input type='password' placeholder='Password' className='mt-3 border border-black rounded p-1' onChange={handleEPassword}></input>
             
             <button type='submit' className='bg-violet-400 py-1 px-4 rounded mt-3 hover:bg-violet-700'
             onClick={handleLogin}>Login</button>

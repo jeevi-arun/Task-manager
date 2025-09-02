@@ -25,7 +25,7 @@ const Signup = ({userData, setUserData}) => {
    setUserData([...userData, { username: eUserName, password: ePassword }]);
 
     console.log("Added")
-    navigate('/login',{state:{username:eUserName}})
+    navigate('/login')
    }
  
 
@@ -37,8 +37,8 @@ const Signup = ({userData, setUserData}) => {
             <p>Sign up here :)</p>
             <div className=' flex flex-col w-52'>
             <input type='text' placeholder='Username' className='mt-3 border border-black rounded p-1' onChange={handleEUsername}></input>
-            <input type='text' placeholder='Password' className='mt-3 border border-black rounded p-1'onChange={handleEPassword}></input>
-           <input type='text' placeholder=' Confirm Password' className='mt-3 border border-black rounded p-1'></input>
+            <input type='password' placeholder='Password' className='mt-3 border border-black rounded p-1'onChange={handleEPassword}></input>
+           <input type='password' placeholder=' Confirm Password' className='mt-3 border border-black rounded p-1'></input>
             <button type='submit' className='bg-yellow-400 py-1 px-4 rounded mt-3 hover:bg-yellow-500' onClick={addUsers}>Sign Up</button>
            </div>
             <p className='mt-2'>Already have an account? <Link to="/login" className='underline'>Login</Link></p> 
